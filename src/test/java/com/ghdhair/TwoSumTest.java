@@ -1,49 +1,49 @@
 package com.ghdhair;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertNull;
 
 import org.junit.Test;
 
 public class TwoSumTest {
 	@Test
-	void nullCheck() 
+	public void nullCheck() 
 	{
 		int[] arr= {5,2,7,9};
 		int target=0;
 		int[] ans=TwoSum.twoSum(arr,target);
-		
-		assertEquals("No target found",ans);
+		assertNull(ans);
+		//assertEquals("No target found",ans);
 	}
 	
 	@Test
-	void validtwoSum1()
+	public void validtwoSum1()
 	{
 		int[] arr= {5,2,7,9};
 		int target=7;
-		int[] expected= {0,3};
+		int[] expected= {1,0};
 		int[] ans=TwoSum.twoSum(arr,target);
-		assertEquals(expected, ans);
+		assertArrayEquals(expected, ans);
 	}
 	
 	@Test
-	void validtwoSum2()
+	public void validtwoSum2()
 	{
 		int[] arr= {5,2,7,9};
 		int target=9;
-		int[] expected= {1,2};
+		int[] expected= {2,1};
 		int[] ans=TwoSum.twoSum(arr,target);
-		assertEquals(expected, ans);
+		assertArrayEquals(expected, ans);
 	}
 	@Test
-	void twoSum()
+	public void twoSum()
 	{
 		int[] arr= {5,5};
 		int target=10;
-		int[] expected= {0,1};
+		int[] expected= {1,0};
 		int[] ans=TwoSum.twoSum(arr,target);
-		assertEquals(expected, ans);
+		assertArrayEquals(expected, ans);
 	}
-	
 	
 	
 
