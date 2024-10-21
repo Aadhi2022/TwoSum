@@ -38,7 +38,7 @@ public class TwoSumTest {
 	void twoSum()
 	{
 		int[] arr= {5,5};
-		int target=6;
+		int target=10;
 		int[] expected= {0,1};
 		int[] ans=TwoSum.twoSum(arr,target);
 		assertEquals(expected, ans);
