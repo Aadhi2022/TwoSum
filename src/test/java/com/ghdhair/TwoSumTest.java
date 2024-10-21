@@ -20,7 +20,7 @@ public class TwoSumTest {
 	{
 		int[] arr= {5,2,7,9};
 		int target=7;
-		int[] expected= {0,1};
+		int[] expected= {0,3};
 		int[] ans=TwoSum.twoSum(arr,target);
 		assertEquals(expected, ans);
 	}
@@ -34,6 +34,17 @@ public class TwoSumTest {
 		int[] ans=TwoSum.twoSum(arr,target);
 		assertEquals(expected, ans);
 	}
+	@Test
+	void twoSum()
+	{
+		int[] arr= {5,5};
+		int target=6;
+		int[] expected= {0,1};
+		int[] ans=TwoSum.twoSum(arr,target);
+		assertEquals(expected, ans);
+	}
+	
+	
 	
 
 }
